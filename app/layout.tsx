@@ -1,9 +1,11 @@
 import '@/styles/globals.css';
 import { Metadata, Viewport } from 'next';
-import { Toaster } from 'react-hot-toast';
 import Script from 'next/script';
+import { Toaster } from 'react-hot-toast';
 
 import { Providers } from './providers';
+
+import { showBrand } from '@/utils/brand';
 
 export const maxDuration = 600;
 
@@ -40,10 +42,12 @@ export default async function RootLayout({
           <Toaster />
           {children}
         </Providers>
-        <Script
-          id="show-customer-chat"
-          src="https://assets.salesmartly.com/js/project_177_61_1649762323.js"
-        />
+        {showBrand && (
+          <Script
+            id="show-customer-chat"
+            src="https://assets.salesmartly.com/js/project_177_61_1649762323.js"
+          />
+        )}
       </body>
     </html>
   );

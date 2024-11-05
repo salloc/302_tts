@@ -13,6 +13,7 @@ import clsx from 'clsx';
 import { title } from './primitives';
 
 import { useLanguageContext } from '@/providers/language-provider';
+import { showBrand } from '@/utils/brand';
 
 interface HeaderProps {
   className?: string;
@@ -31,11 +32,13 @@ export default function Header({ className }: HeaderProps) {
       )}
     >
       <div className="flex items-center space-x-4">
-        <Image
-          alt="302"
-          className="size-6 object-contain sm:size-8 md:size-10"
-          src="https://file.302.ai/gpt/imgs/5b36b96aaa052387fb3ccec2a063fe1e.png"
-        />
+        {showBrand && (
+          <Image
+            alt="302"
+            className="size-6 object-contain sm:size-8 md:size-10"
+            src="https://file.302.ai/gpt/imgs/5b36b96aaa052387fb3ccec2a063fe1e.png"
+          />
+        )}
         <h1 className={title({ size: 'sm' })}>{t('home.header.title')}</h1>
       </div>
       <Modal

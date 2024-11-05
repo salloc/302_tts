@@ -36,6 +36,7 @@ import { useSpeakers } from '@/hooks/use-speakers';
 import { useLanguageContext } from '@/providers/language-provider';
 import { useSessionStore } from '@/stores/use-session-store';
 import { getAudioDuration } from '@/utils/audio-tools';
+import { showBrand } from '@/utils/brand';
 import { useSessionStateDB } from '@/utils/session-db';
 
 export interface CustomModel {
@@ -483,7 +484,7 @@ export default function HomePage() {
           handleTextToSpeech={handleTextToSpeech}
         />
       </div>
-      <Footer />
+      {showBrand && <Footer />}
       <VoiceCloneModal
         customModels={customModels}
         isOpen={isVoiceCloneModalOpen}
