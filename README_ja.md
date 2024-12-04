@@ -6,6 +6,7 @@
 
 <p align="center"><a href="README zh.md">中文</a> | <a href="README.md">English</a> | <a href="README_ja.md">日本語</a></p>
 
+![インターフェースのプレビュー](docs/语音生成器jp.png)
 
 [302.AI](https://302.ai)の[AIコード生成器](https://302.ai/tools/tts/)のオープンソース版です。
 302.AIに直接ログインすることで、コード不要、設定不要のオンライン体験が可能です。
