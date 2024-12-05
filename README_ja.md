@@ -2,9 +2,9 @@
 
 <p align="center">AI 音声生成器は、TTS（テキストから音声への変換）サービスを通じて、自然で滑らかで、多言語で、多音色で、異なる話速の高品質な音声を迅速に生成します。それは吹き替え、音声アシスタント、有声音書などの分野に応用され、Microsoft Azure TTS や OpenAI TTS などのモデルをサポートしています。</p>
 
-<p align="center"><a href="https://302.ai/tools/word/" target="blank"><img src="https://file.302ai.cn/gpt/imgs/github/302_badge.png" /></a></p >
+<p align="center"><a href="https://302.ai/ja/tools/tts/" target="blank"><img src="https://file.302ai.cn/gpt/imgs/github/302_badge.png" /></a></p >
 
-<p align="center"><a href="README zh.md">中文</a> | <a href="README.md">English</a> | <a href="README_ja.md">日本語</a></p>
+<p align="center"><a href="README_zh.md">中文</a> | <a href="README.md">English</a> | <a href="README_ja.md">日本語</a></p>
 
 ![インターフェースのプレビュー](docs/语音生成器jp.png)
 
