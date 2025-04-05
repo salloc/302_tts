@@ -1,0 +1,6 @@
+name = "babuin-tts"
+compatibility_date = "2025-04-06"
+
+[pages]
+build_command = "npm run build"
+build_dir = "./.next"
