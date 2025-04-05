@@ -3,7 +3,7 @@ import { cookies, headers } from 'next/headers';
 
 import HomePage from '@/components/page/home-page';
 import { detectLocale, locales } from '@/utils/detectLocale';
-
+export const runtime = "edge";
 type Props = {
   params: { locale: string };
   searchParams: { [key: string]: string | string[] | undefined };
